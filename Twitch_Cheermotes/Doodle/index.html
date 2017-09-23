@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doodle Cheermotes</title>
+	<style type="text/css">
+			body {background: #efeef1; font-family: sans-serif; width: 100%; margin: 0;}
+			table {margin: 0 auto;}
+			tr {text-align: center; vertical-align: middle;}
+			td:first-child {font-weight: bold;}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>1 bits</th>
+			<th>100 bits</th>
+			<th>1000 bits</th>
+			<th>5000 bits</th>
+			<th>100000 bits</th>
+			<th>1000000 bits</th>
+		</tr>
+		<tr>
+			<td><img src="1.gif"></td>
+			<td><img src="100.gif"></td>
+			<td><img src="1000.gif"></td>
+			<td><img src="5000.gif"></td>
+			<td><img src="10000.gif"></td>
+			<td><img src="100000.gif"></td>
+		</tr>
+		
+		<tr>
+			<td>
+				<button type="button" onclick="dark()">Dark</button>
+				<button type="button" onclick="light()">Light</button>
+			</td>
+		</tr>
+	</table>
+	
+
+	<script>
+		function dark() {
+    		document.body.style.backgroundColor = "#101010";
+    		document.body.style.color = "white"
+		}
+		function light() {
+    		document.body.style.backgroundColor = "#efeef1";
+    		document.body.style.color = "black"
+		}
+	</script>
+</body>
+</html>
