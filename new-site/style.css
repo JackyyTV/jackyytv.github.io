@@ -1,0 +1,146 @@
+/*TAGS*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #101010;
+}
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+}
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 10px 0;
+    line-height: 100%;
+    font-size: 32px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 5px;
+}
+
+/*CLASSES*/
+.navbar {
+    width: 100%;
+    height: 70px;
+    background: rgba(6,177,33,0.7);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.main {
+    width: 100%;
+    height: 1500px;
+}
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.nav-logo {
+    float: left;
+    margin: 15px 20px 15px 0;
+}
+.nav-title {
+    float: left;
+    margin: 21px 0 17px 0;
+}
+.twitch-status {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    //background: blue;
+    left: calc(50% - 250px);
+    top: 135px;
+    text-shadow: 2px 2px 4px #000;
+}
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid purple;
+    display: block;
+    margin: auto;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+    transition: 0.3s;
+}
+.profile:hover {
+    -webkit-box-shadow: 0 0 18px #000;
+    box-shadow: 0 0 18px #000;
+    transition: 0.3s;
+}
+.nav-right {
+    float: right;
+    height: 70px;
+    color: white;
+    line-height: 80px;
+}
+.nav-right i {
+    //margin-right: 20px;
+    font-size: 24px;
+    transition: 0.6s;
+}
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+[class^='socicon']:hover {
+    transition: 0.4s;
+}
+[class*='twitch']:hover {
+    color: #6441A4;
+}
+[class*='youtube']:hover {
+    color: #FF0000;
+}
+[class*='twitter']:hover {
+    color: #55acee;
+}
+[class*='discord']:hover {
+    color: #7289DA;
+}
+[class*='github']:hover {
+    color: #4078c0;
+}
+[class*='curse']:hover {
+    color: #f05422;
+}
+[class*='mail']:hover {
+    color: #c71610;
+}
+.live-icon {
+    color: red;
+    font-size: 18px;
+    line-height: 28px;
+}
+.live-status {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 28px;
+    color: white;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.live-title {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+.live-game {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
