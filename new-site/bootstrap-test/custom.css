@@ -1,0 +1,33 @@
+.navbar-nav>.nav-link {
+    color: white !important;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.socicon-twitch:hover {
+    color: #6441a4;
+}
+
+.socicon-youtube:hover {
+    color: #f00;
+}
+
+.socicon-twitter:hover {
+    color: #55acee;
+}
+
+.socicon-discord:hover {
+    color: #7289da;
+}
+
+.socicon-github:hover {
+    color: #4078c0;
+}
+
+.socicon-curse:hover {
+    color: #f05422;
+}
+
+.socicon-mail:hover {
+    color: #c71610;
+}
