@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Jacky1356400</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="parallax.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    </head>
-    <body>
-        <div class="navbar">
-            <div class="container">
-                <img class="nav-logo" width="40px" src="img/creeper.svg">
-                <h1 class="nav-title">JACKY1356400</h1>
-                <div class="nav-right">
-                    <a href="https://www.twitch.tv/jacky1356400" target="-_blank"><i class="socicon-twitch"></i></a>
-                    <a href="https://www.youtube.com/jacky1356400" target="-_blank"><i class="socicon-youtube"></i></a>
-                    <a href="https://www.twitter.com/jacky1356400" target="-_blank"><i class="socicon-twitter"></i></a>
-                    <a href="https://discord.gg/CPmZdhV" target="-_blank"><i class="socicon-discord"></i></a>
-                    <a href="https://github.com/jacky1356400" target="-_blank"><i class="socicon-github"></i></a>
-                    <a href="https://minecraft.curseforge.com/members/Jacky1356400/projects" target="-_blank"><i class="socicon-curse"></i></a>
-                    <a href="mailto:jack1356400@gmail.com" target="-_blank"><i class="socicon-mail"></i></a>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Jacky1356400</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <script>
+        function toggleMenu() {
+            $('.ion-navicon-round, .ion-close-round').toggleClass('ion-navicon-round ion-close-round')
+            $('.nav-menu').toggle();
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <img class="nav-logo" width="40px" src="img/creeper.svg">
+            <h1 class="nav-title">JACKY1356400</h1>
+            <div class="nav-mobile">
+                <a href="#" onclick="toggleMenu()"><i class="ion-navicon-round"></i></a>
             </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitch.tv/jacky1356400" target="-_blank"><i class="socicon-twitch"></i><span class="nav-link-name">TWITCH</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/jacky1356400" target="-_blank"><i class="socicon-youtube"></i><span class="nav-link-name">YOUTUBE</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitter.com/jacky1356400" target="-_blank"><i class="socicon-twitter"></i><span class="nav-link-name">TWITTER</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.gg/CPmZdhV" target="-_blank"><i class="socicon-discord"></i><span class="nav-link-name">DISCORD</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/jacky1356400" target="-_blank"><i class="socicon-github"></i><span class="nav-link-name">GITHUB</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://minecraft.curseforge.com/members/Jacky1356400/projects" target="-_blank"><i class="socicon-curse"></i><span class="nav-link-name">CURSE FORGE</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:jack1356400@gmail.com" target="-_blank"><i class="socicon-mail"></i><span class="nav-link-name">SEND EMAIL</span></a>
+                </li>
+            </ul>
+
         </div>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/main.jpg" style="height:400px" data-speed="0.15">
-            <div class="twitch-status">
-                <a href="https://www.twitch.tv/jacky1356400" target="_blank">
+    </div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/main.jpg" style="height:400px" data-speed="0.15">
+        <div class="twitch-status">
+            <a href="https://www.twitch.tv/jacky1356400" target="_blank">
                     <img class="profile" src="img/profile.png">
                 </a>
-                <p class="live-status"><span class="ion-record live-icon"></span><span> Jacky1356400 is now LIVE!</span></p>
-                <p class="live-title">FTB Horizons III | I Love Colossal | 5$ Chance Cubes</p>
-                <p class="live-game">Minecraft</p>
-            </div>
+            <p class="live-status"><span class="ion-record live-icon"></span><span> Jacky1356400 is now LIVE!</span></p>
+            <p class="live-title">FTB Horizons III | I Love Colossal | 5$ Chance Cubes</p>
+            <p class="live-game">Minecraft</p>
         </div>
-        <div class="main">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>My name is Jacky and I'm a scrub. Remember to always #blameJacky. Kappa</p>
-            </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Jacky and I'm a scrub. Remember to always #blameJacky. Kappa</p>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

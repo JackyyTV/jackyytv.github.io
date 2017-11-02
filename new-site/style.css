@@ -23,19 +23,19 @@ h2 {
     color: white;
 }
 
-p {
+p,
+span {
     font-family: 'Roboto', sans-serif;
     padding-left: 5px;
     color: white;
 }
 
-/*CLASSES*/
-
-@media only screen and (max-width: 840px) {
-    .nav-right {
-        display: none;
-    }
+a {
+    text-decoration: none;
+    color: white;
 }
+
+/*CLASSES*/
 
 .navbar {
     position: fixed;
@@ -72,8 +72,6 @@ p {
 .twitch-status {
     position: relative;
     top: 135px;
-    left: calc(50% - 250px);
-    width: 500px;
     height: 200px;
     text-shadow: 2px 2px 4px #000;
 }
@@ -96,22 +94,43 @@ p {
     box-shadow: 0 0 18px #000;
 }
 
-.nav-right {
-    line-height: 80px;
-    float: right;
-    height: 70px;
-    color: white;
-}
-
-.nav-right i {
-    font-size: 24px;
+.nav-link i {
     transition: 0.6s;
 }
 
-.nav-right a {
-    margin-right: 20px;
-    text-decoration: none;
+.nav-menu {
+    padding: 0;
+    margin: 0;
+    line-height: 70px;
+    float: right;
     color: white;
+    font-size: 24px;
+}
+
+.nav-item {
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link-name {
+    font-size: 0;
+}
+
+.nav-mobile {
+    display: none;
+    height: inherit;
+    float: right;
+    padding: 0;
+    margin: 0;
+    line-height: 70px;
+    font-size: 36px;
 }
 
 [class^='socicon']:hover {
@@ -175,4 +194,35 @@ p {
     margin: 0;
     text-align: center;
     color: white;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 840px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 50%;
+        line-height: 50px;
+        margin-right: -10%;
+        padding-left: 10px;
+        background: #06b121;
+        background: rgba(6, 177, 33, 0.7);
+    }
+
+    .nav-item {
+        width: 100%;
+        display: block;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .nav-link-name {
+        font-size: 18px;
+    }
 }
