@@ -23,11 +23,14 @@ h2 {
     color: white;
 }
 
-p,
-span {
+p {
     font-family: 'Roboto', sans-serif;
     padding-left: 5px;
     color: white;
+}
+
+span {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 a {
@@ -99,6 +102,7 @@ a {
 }
 
 .nav-menu {
+    position: static;
     padding: 0;
     margin: 0;
     line-height: 70px;
@@ -204,10 +208,12 @@ a {
     }
 
     .nav-menu {
+        position: absolute;
         display: none;
-        width: 50%;
+        width: 30%;
         line-height: 50px;
-        margin-right: -10%;
+        top: 70px;
+        right: 0;
         padding-left: 10px;
         background: #06b121;
         background: rgba(6, 177, 33, 0.7);
@@ -224,5 +230,7 @@ a {
 
     .nav-link-name {
         font-size: 18px;
+        padding-left: 5px;
+        margin-bottom: 20px;
     }
 }
