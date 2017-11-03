@@ -200,6 +200,16 @@ a {
     color: white;
 }
 
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 100%;
+    margin: 10px 0;
+    padding: 0;
+	text-align: center;
+    color: white;
+}
+
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 840px) {
