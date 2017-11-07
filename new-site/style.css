@@ -8,7 +8,6 @@ body {
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
-    line-height: 100%;
     margin: 0;
     padding: 0;
     color: white;
@@ -25,7 +24,6 @@ h2 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    padding-left: 5px;
     color: white;
 }
 
@@ -36,6 +34,7 @@ span {
 a {
     text-decoration: none;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*CLASSES*/
@@ -69,32 +68,7 @@ a {
 
 .nav-title {
     float: left;
-    margin: 21px 0 17px;
-}
-
-.twitch-status {
-    position: relative;
-    top: 135px;
-    height: 200px;
-    text-shadow: 2px 2px 4px #000;
-}
-
-.profile {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    transition: 0.3s;
-    border: 1px solid purple;
-    border-radius: 50px;
-    -webkit-box-shadow: 0 0 10px #000;
-    box-shadow: 0 0 10px #000;
-}
-
-.profile:hover {
-    transition: 0.3s;
-    -webkit-box-shadow: 0 0 18px #000;
-    box-shadow: 0 0 18px #000;
+    margin: 15px 0;
 }
 
 .nav-link i {
@@ -109,6 +83,7 @@ a {
     float: right;
     color: white;
     font-size: 24px;
+    height: 70px;
 }
 
 .nav-item {
@@ -135,6 +110,10 @@ a {
     margin: 0;
     line-height: 70px;
     font-size: 36px;
+}
+
+[class^='socicon'] {
+    line-height: 70px !important;
 }
 
 [class^='socicon']:hover {
@@ -169,17 +148,46 @@ a {
     color: #c71610;
 }
 
+.twitch-status {
+    position: relative;
+    width: 25%;
+    left: 37.5%;
+    top: 135px;
+    text-shadow: 2px 2px 4px #000;
+    display: block;
+}
+
+.live-profile {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: 0.3s;
+    border: 1px solid purple;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 10px #000;
+            box-shadow: 0 0 10px #000;
+}
+
+.twitch-status:hover > .live-profile {
+    transition: 0.3s;
+    -webkit-box-shadow: 0 0 18px #000;
+            box-shadow: 0 0 18px #000;
+}
+
 .live-icon {
     font-size: 18px;
     line-height: 28px;
     color: red;
+    height: 35px;
+    vertical-align: middle;
 }
 
 .live-status {
     font-family: 'Fjalla One', sans-serif;
     font-size: 28px;
     line-height: 28px;
-    margin-bottom: 0;
+    margin: 10px 0;
     text-align: center;
     color: white;
 }
@@ -200,9 +208,55 @@ a {
     color: white;
 }
 
+.page-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-nav-list {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.page-nav-item {
+    display: block;
+    float: left;
+    list-style: none;
+    background: green;
+}
+
+.page-nav-link {
+    color: white;
+    padding: 15px;
+    margin: 0;
+    display: block;
+}
+
+.page-nav-item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.page-nav-item:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.page-nav-item:hover {
+    background: darkgreen;
+}
+
 /*MEDIA QUERIES*/
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1268px) {
+    .twitch-status {
+        width: 45%;
+        left: 27.5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .container {
         width: 90%;
     }
@@ -210,18 +264,28 @@ a {
     .nav-menu {
         position: absolute;
         display: none;
-        width: 30%;
-        line-height: 50px;
+        width: 50%;
+        line-height: 40px;
         top: 70px;
         right: 0;
-        padding-left: 10px;
+        padding: 0 10px;
         background: #06b121;
         background: rgba(6, 177, 33, 0.7);
+        height: auto;
     }
 
     .nav-item {
         width: 100%;
         display: block;
+        border-bottom: black solid 1px;
+    }
+
+    .nav-link {
+        display: block;
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
     }
 
     .nav-mobile {
@@ -230,7 +294,34 @@ a {
 
     .nav-link-name {
         font-size: 18px;
-        padding-left: 5px;
-        margin-bottom: 20px;
+        padding-left: 10px;
+        line-height: 40px;
+    }
+
+    [class^='socicon'] {
+        line-height: 50px !important;
+    }
+
+    .twitch-status {
+        width: 90%;
+        left: 5%;
+    }
+
+    .page-nav-list {
+        width: 80%;
+    }
+
+    .page-nav-item:first-child {
+        border-radius: 5px;
+    }
+
+    .page-nav-item:last-child {
+        border-radius: 5px;
+    }
+
+    .page-nav-item {
+        float: none;
+        margin-bottom: 10px;
+        border-radius: 5px;
     }
 }

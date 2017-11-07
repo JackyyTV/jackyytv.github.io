@@ -13,6 +13,7 @@
     <meta name="theme-color" content="#00a300">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="parallax.min.js"></script>
+    <script src="stream-status.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
@@ -32,7 +33,7 @@
             <img class="nav-logo" width="40px" src="imgs/creeper.svg">
             <h1 class="nav-title">JACKY</h1>
             <div class="nav-mobile">
-                <a href="#" onclick="toggleMenu()"><i class="ion-navicon-round"></i></a>
+                <a onclick="toggleMenu()"><i class="ion-navicon-round"></i></a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -57,26 +58,35 @@
                     <a class="nav-link" href="mailto:jacky1356400@gmail.com" target="-_blank"><i class="socicon-mail"></i><span class="nav-link-name">SEND EMAIL</span></a>
                 </li>
             </ul>
-
         </div>
     </div>
     <div class="parallax-window" data-parallax="scroll" data-image-src="imgs/main.png" style="height:400px" data-speed="0.15">
-        <div class="twitch-status">
-            <a href="https://www.twitch.tv/jacky1356400" target="_blank">
-                    <img class="profile" src="imgs/profile.png">
-                </a>
-            <p class="live-status"><span class="ion-record live-icon"></span><span> Jacky1356400 is now LIVE!</span></p>
-            <p class="live-title">(Insert Title Here)</p>
-            <p class="live-game">Minecraft</p>
-        </div>
+        <a class="twitch-status" href="https://www.twitch.tv/jacky1356400" target="_blank">
+            <img class="live-profile" src="imgs/profile.png">
+            <div class="live-status"><span class="ion-record live-icon"></span><span> Jacky1356400 is <span class="live-now"></span></span></div>
+            <p class="live-title"></p>
+            <p class="live-game"></p>
+        </a>
     </div>
     <div class="main">
         <div class="container">
             <h2 align="center">Welcome to Jacky's Website!</h2>
-            <p align="center">About Me</p>
-            <p align="center">Minecraft Stuff</p>
-            <p align="center">Twitch Stuff</p>
-            <p align="center">PC Specs</p>
+            <div class="page-nav">
+                <ul class="page-nav-list">
+                    <li class="page-nav-item">
+                        <a class="page-nav-link" href="#">ABOUT ME</a>
+                    </li>
+                    <li class="page-nav-item">
+                        <a class="page-nav-link" href="#">MINECRAFT STUFF</a>
+                    </li>
+                    <li class="page-nav-item">
+                        <a class="page-nav-link" href="#">TWITCH STUFF</a>
+                    </li>
+                    <li class="page-nav-item">
+                        <a class="page-nav-link" href="#">PC SPECS</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <footer>
