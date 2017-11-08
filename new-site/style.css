@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     background: #101010;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 h2 {
@@ -19,22 +20,19 @@ h2 {
     line-height: 100%;
     margin: 10px 0;
     padding: 0;
-    color: white;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-span {
-    font-family: 'Fjalla One', sans-serif;
 }
 
 a {
     text-decoration: none;
     color: white;
-    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    display: none;
+}
+
+section:first-of-type {
+    display: block;
 }
 
 /*CLASSES*/
@@ -51,7 +49,6 @@ a {
 
 .main {
     width: 100%;
-    height: 1500px;
 }
 
 .container {
@@ -81,7 +78,6 @@ a {
     margin: 0;
     line-height: 70px;
     float: right;
-    color: white;
     font-size: 24px;
     height: 70px;
 }
@@ -93,7 +89,6 @@ a {
 }
 
 .nav-link {
-    color: white;
     padding: 0;
     margin: 0;
 }
@@ -189,7 +184,6 @@ a {
     line-height: 28px;
     margin: 10px 0;
     text-align: center;
-    color: white;
 }
 
 .live-title {
@@ -197,7 +191,6 @@ a {
     font-size: 18px;
     margin: 5px;
     text-align: center;
-    color: white;
 }
 
 .live-game {
@@ -205,7 +198,6 @@ a {
     font-size: 12px;
     margin: 0;
     text-align: center;
-    color: white;
 }
 
 .page-nav {
@@ -216,7 +208,6 @@ a {
 .page-nav-list {
     padding: 0;
     margin: 0;
-    color: white;
     font-size: 16px;
     display: inline-block;
 }
@@ -226,9 +217,10 @@ a {
     float: left;
     list-style: none;
     background: green;
+    transition: 0.3s;
 }
 
-.page-nav-link {
+.page-nav-item {
     color: white;
     padding: 15px;
     margin: 0;
@@ -245,6 +237,30 @@ a {
 
 .page-nav-item:hover {
     background: darkgreen;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-nav-active {
+    background: darkgreen;
+}
+
+.page-nav-active:hover {
+    cursor: default;
+}
+
+.content-change {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: white 3px solid;
+    height: 1000px;
 }
 
 /*MEDIA QUERIES*/

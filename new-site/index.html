@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="parallax.min.js"></script>
     <script src="stream-status.js"></script>
+    <script src="section-change.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
@@ -73,19 +74,25 @@
             <h2 align="center">Welcome to Jacky's Website!</h2>
             <div class="page-nav">
                 <ul class="page-nav-list">
-                    <li class="page-nav-item">
-                        <a class="page-nav-link" href="#">ABOUT ME</a>
-                    </li>
-                    <li class="page-nav-item">
-                        <a class="page-nav-link" href="#">MINECRAFT STUFF</a>
-                    </li>
-                    <li class="page-nav-item">
-                        <a class="page-nav-link" href="#">TWITCH STUFF</a>
-                    </li>
-                    <li class="page-nav-item">
-                        <a class="page-nav-link" href="#">PC SPECS</a>
-                    </li>
+                    <li class="page-nav-item page-nav-active">ABOUT ME</li>
+                    <li class="page-nav-item">MINECRAFT STUFF</li>
+                    <li class="page-nav-item">TWITCH STUFF</li>
+                    <li class="page-nav-item">PC SPECS</li>
                 </ul>
+            </div>
+            <div class="content-change">
+                <section class="content" style="background:blue">
+                    <p>about section</p>
+                </section>
+                <section class="content" style="background:green;height:1500px">
+                    <p>minecraft section</p>
+                </section>
+                <section class="content" style="background:red;height:2000px">
+                    <p>twitch section</p>
+                </section>
+                <section class="content" style="background:pink;height:2500px">
+                    <p>pc section</p>
+                </section>
             </div>
         </div>
     </div>
