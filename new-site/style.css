@@ -258,9 +258,6 @@ section:first-of-type {
     top: 0;
     left: 0;
     width: 100%;
-    box-sizing: border-box;
-    border: white 3px solid;
-    height: 1000px;
 }
 
 /*MEDIA QUERIES*/
