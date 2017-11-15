@@ -1,5 +1,5 @@
 console.log('Detecting Status...');
-$.getJSON('https://api.twitch.tv/kraken/streams/' + 'jacky1356400' + '?client_id=5ojgte4x1dp72yumoc8fp9xp44nhdj', function(data) {
+$.getJSON('https://api.twitch.tv/kraken/streams/' + 'jackyy' + '?client_id=5ojgte4x1dp72yumoc8fp9xp44nhdj', function(data) {
     if (data.stream !== null) {
         var title = data.stream.channel.status;
         var game = data.stream.channel.game;
