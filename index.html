@@ -1,18 +1,165 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Jacky's Website</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00a300">
-	<meta name="theme-color" content="#00a300">
-	<style type="text/css">
-		body {background: #efeef1; font-family: sans-serif; width: 100%; margin: 0;}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Jacky's Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00a300">
+    <meta name="theme-color" content="#00a300">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <script src="stream-status.js"></script>
+    <script src="section-change.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <script>
+        function toggleMenu() {
+            $('.ion-navicon-round, .ion-close-round').toggleClass('ion-navicon-round ion-close-round')
+            $('.nav-menu').toggle();
+        }
+    </script>
 </head>
+
 <body>
-<h1 align="center">#soon™</h1>
+    <div class="navbar">
+        <div class="container">
+            <img class="nav-logo" width="40px" src="imgs/creeper.svg">
+            <h1 class="nav-title">JACKY</h1>
+            <div class="nav-mobile">
+                <a onclick="toggleMenu()"><i class="ion-navicon-round"></i></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitch.tv/jackyy" target="-_blank"><i class="socicon-twitch"></i><span class="nav-link-name">TWITCH</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/JackyScrubby" target="-_blank"><i class="socicon-youtube"></i><span class="nav-link-name">YOUTUBE</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitter.com/JackyyTV" target="-_blank"><i class="socicon-twitter"></i><span class="nav-link-name">TWITTER</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.gg/CPmZdhV" target="-_blank"><i class="socicon-discord"></i><span class="nav-link-name">DISCORD</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Jacky1356400" target="-_blank"><i class="socicon-github"></i><span class="nav-link-name">GITHUB</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://minecraft.curseforge.com/members/Jacky1356400/projects" target="-_blank"><i class="socicon-curse"></i><span class="nav-link-name">CURSEFORGE</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:jacky1356400@gmail.com" target="-_blank"><i class="socicon-mail"></i><span class="nav-link-name">SEND EMAIL</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="imgs/main.png" style="height:400px" data-speed="0.15">
+        <a class="twitch-status" href="https://www.twitch.tv/jackyy" target="_blank">
+            <img class="live-profile" src="imgs/profile.png">
+            <div class="live-status"><span class="ion-record live-icon"></span><span> Jackyy is <span class="live-now"></span></span></div>
+            <p class="live-title"></p>
+            <p class="live-game"></p>
+        </a>
+    </div>
+    <div class="main">
+        <div class="container">
+            <h2 align="center">Welcome to Jacky's Website!</h2>
+            <div class="page-nav">
+                <ul class="page-nav-list">
+                    <li class="page-nav-item page-nav-active">ABOUT ME</li>
+                    <li class="page-nav-item">MINECRAFT STUFF</li>
+                    <li class="page-nav-item">TWITCH STUFF</li>
+                    <li class="page-nav-item">PC SPECS</li>
+                </ul>
+            </div>
+            <div class="content-change">
+                <section class="content">
+                    <p>Hey there, I am Jacky!</p>
+                    <ul>
+                        <li>I am from Hong Kong</li>
+                        <li>I used to be a computer programmer as my job, but I am now a full-time gamer, Twitch broadcaster and channels moderator</li>
+                        <li>I am 29 years old</li>
+                        <li>I enjoy music a lot, especially EDM (preferably from Monstercat)</li>
+                        <li>I started broadcasting on Twitch since 10 April 2016</li>
+                        <li>I mainly play modded Minecraft on stream, sometimes I might broadcast games other than Minecraft (e.g. PUBG, Overwatch, Golf With Your Friends, etc.)</li>
+                        <li>Apart from broadcasting, I am also a Minecraft mods developer!</li>
+                        <li>Creeper is my favourite thing in Minecraft, hence why everything of mine are all green and Creeper-themed</li>
+                    </ul>
+                </section>
+                <section class="content">
+                    <p>Here are a list of Minecraft mods I've made:</p>
+                    <ul>
+                        <li><a href="https://minecraft.curseforge.com/projects/exchangers">Exchangers</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/simple-sponge">Simple Sponge</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/actually-baubles">Actually Baubles</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/integration-foregoing">Integration Foregoing</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/dimensional-edibles">Dimensional Edibles</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/lucky-beans">Lucky Beans</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/no-auto-jump">No Auto Jump</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/sky-islands-creator">Sky Islands Creator (Discontinued)</a></li>
+                    </ul>
+                    <p>I make modpacks too! Here are a list of Minecraft modpacks I've made:</p>
+                    <ul>
+                        <li><a href="https://minecraft.curseforge.com/projects/lite-island">Lite Island (1.12)</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/space-voyager">Space Voyager (1.7.10, Discontinued)</a></li>
+                        <li><a href="https://minecraft.curseforge.com/projects/cr33p3rcraft">Cr33p3rCraft (1.7.10, Discontinued)</a></li>
+                    </ul>
+                </section>
+                <section class="content">
+                    <p>All the Twitch-related stuff, just a few...</p>
+                    <ul>
+                        <li>Channel Rules</li>
+                        <li>Streaming Schedule</li>
+                        <li>Supporting the Channel</li>
+                        <li>On-stream Music</li>
+                        <li>Recommended Streamers</li>
+                    </ul>
+                </section>
+                <section class="content">
+                    <p>Quite a lot of people have asked me about my PC specs, so there you have it!</p>
+                    <h3>Main PC for gaming / streaming:</h3>
+                    <ul>
+                        <li>CPU: Intel Core i7-6700K</li>
+                        <li>Motherboard: ASUS Z170-P</li>
+                        <li>RAM: Kingston HyperX Fury Black DDR4-2400 8GB x2</li>
+                        <li>CPU Water Cooler: Cooler Master Nepton 240M</li>
+                        <li>SSD (For boot drive): Sandisk Ultra II 240GB</li>
+                        <li>HDD (For storage): Seagate Desktop HDD 1TB 64MB Cache</li>
+                        <li>Graphics Card: Asus Strix GTX960-DC2OC-4GD5</li>
+                        <li>Case: Cooler Master MasterCase Pro 5</li>
+                        <li>PSU: Cooler Master GX650 - CM Storm Edition</li>
+                        <li>OS: Windows 10 Professional 64-bit</li>
+                    </ul>
+                    <h3>Audio Equipments:</h3>
+                    <ul>
+                        <li>Headphone / Headset: Logitech G633 Artemis Spectrum</li>
+                        <li>Microphone: Audio-Technica AT2020</li>
+                        <li>Mixer: Behringer Xenyx Q802USB</li>
+                    </ul>
+                    <h3>Peripherals:</h3>
+                    <ul>
+                        <li>Keyboard: Logitech G19S</li>
+                        <li>Mouse: Logitech G502 Proteus Spectrum</li>
+                        <li>Gamepad: Logitech F710</li>
+                        <li>Monitors: 5x Samsung S24D590PL</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p align="center">© Jacky 2017, All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
+
 </html>
