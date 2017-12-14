@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitch Cheermotes Showcase</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00a300">
+	<meta name="theme-color" content="#00a300">
+	<style type="text/css">
+		body {background: #1d1d1d; font-family: sans-serif; width: 100%; margin: 0;}
+		table {margin: 0 auto;}
+		tr {text-align: center; vertical-align: middle;}
+		td:first-child {font-weight: bold;}
+	</style>
+</head>
+<body>
+	<table>
+        <ul>
+            <li>
+                <a href="Cheer/">Regular Cheermotes</a>
+            </li>
+            <li>
+                <a href="Doodle/">Doodle Cheermotes</a>
+            </li>
+            <li>
+                <a href="bday/">Birthday Cheermotes</a>
+            </li>
+            <li>
+                <a href="RIPCheer/">Halloween Cheermotes</a>
+            </li>
+            <li>
+                <a href="HolidayCheer/">Winter Holiday Cheermotes</a>
+            </li>
+            <li>
+                <a href="BitBoss/">BitBoss Cheermotes</a>
+            </li>
+        </ul>
+		<tr>
+			<td>
+				<button type="button" onclick="dark()">Dark</button>
+				<button type="button" onclick="light()">Light</button>
+                <a href="../">Back</a>
+			</td>
+		</tr>
+	</table>
+
+	<script>
+		function dark() {
+    		document.body.style.backgroundColor = "#1d1d1d";
+    		document.body.style.color = "white"
+		}
+		function light() {
+    		document.body.style.backgroundColor = "#efeef1";
+    		document.body.style.color = "black"
+		}
+	</script>
+</body>
+</html>
