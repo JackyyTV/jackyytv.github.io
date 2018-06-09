@@ -128,6 +128,10 @@ section:first-of-type {
     color: #55acee;
 }
 
+.socicon-instagram:hover {
+    color: #fd5949;
+}
+
 .socicon-discord:hover {
     color: #7289da;
 }
