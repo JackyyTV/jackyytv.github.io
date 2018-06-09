@@ -133,7 +133,7 @@ section:first-of-type {
 }
 
 .socicon-github:hover {
-    color: #4078c0;
+    color: #000000;
 }
 
 .socicon-curse:hover {
@@ -141,7 +141,7 @@ section:first-of-type {
 }
 
 .socicon-mail:hover {
-    color: #c71610;
+    color: #a0a0a0;
 }
 
 .twitch-status {
