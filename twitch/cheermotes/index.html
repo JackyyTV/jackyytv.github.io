@@ -9,32 +9,99 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00a300">
 	<meta name="theme-color" content="#00a300">
 	<style type="text/css">
-		body {background: #1d1d1d; font-family: sans-serif; width: 100%; margin: 0;}
+		body {background: #1d1d1d; font-family: sans-serif; width: 100%; margin: 0; color: white;}
 		table {margin: 0 auto;}
 		tr {text-align: center; vertical-align: middle;}
 		td:first-child {font-weight: bold;}
+        a {color: white;}
 	</style>
 </head>
 <body>
 	<table>
         <ul>
             <li>
-                <a href="Cheer/">Regular Cheermotes</a>
+                <a href="cheer/">Regular Cheermotes</a>
             </li>
-            <li>
-                <a href="Doodle/">Doodle Cheermotes</a>
-            </li>
+            <br>
             <li>
                 <a href="bday/">Birthday Cheermotes</a>
             </li>
             <li>
-                <a href="RIPCheer/">Halloween Cheermotes</a>
+                <a href="goal/">Goal Cheermotes</a>
             </li>
             <li>
-                <a href="HolidayCheer/">Winter Holiday Cheermotes</a>
+                <a href="halloween/">Halloween Cheermotes</a>
             </li>
             <li>
-                <a href="BitBoss/">BitBoss Cheermotes</a>
+                <a href="party/">Party Cheermotes</a>
+            </li>
+            <li>
+                <a href="pride/">Pride Cheermotes</a>
+            </li>
+            <li>
+                <a href="shamrock/">Shamrock Cheermotes</a>
+            </li>
+            <li>
+                <a href="holiday/">Winter Holiday Cheermotes</a>
+            </li>
+            <br>
+            <li>
+                <a href="bitboss/">BitBoss Cheermotes</a>
+            </li>
+            <li>
+                <a href="doodle/">Doodle Cheermotes</a>
+            </li>
+            <li>
+                <a href="muxy/">Muxy Cheermotes</a>
+            </li>
+            <li>
+                <a href="streamlabs/">Streamlabs Cheermotes</a>
+            </li>
+            <br>
+            <li>
+                <a href="4head/">4Head Cheermotes</a>
+            </li>
+            <li>
+                <a href="dansgame/">DansGame Cheermotes</a>
+            </li>
+            <li>
+                <a href="elegiggle/">EleGiggle Cheermotes</a>
+            </li>
+            <li>
+                <a href="failfish/">FailFish Cheermotes</a>
+            </li>
+            <li>
+                <a href="frankerz/">FrankerZ Cheermotes</a>
+            </li>
+            <li>
+                <a href="heyguys/">HeyGuys Cheermotes</a>
+            </li>
+            <li>
+                <a href="kappa/">Kappa Cheermotes</a>
+            </li>
+            <li>
+                <a href="kreygasm/">Kreygasm Cheermotes</a>
+            </li>
+            <li>
+                <a href="mrdestructoid/">MrDestructoid Cheermotes</a>
+            </li>
+            <li>
+                <a href="notlikethis/">NotLikeThis Cheermotes</a>
+            </li>
+            <li>
+                <a href="pjsalt/">PJSalt Cheermotes</a>
+            </li>
+            <li>
+                <a href="seemsgood/">SeemsGood Cheermotes</a>
+            </li>
+            <li>
+                <a href="swiftrage/">SwiftRage Cheermotes</a>
+            </li>
+            <li>
+                <a href="trihard/">TriHard Cheermotes</a>
+            </li>
+            <li>
+                <a href="vohiyo/">VoHiYo Cheermotes</a>
             </li>
         </ul>
 		<tr>
@@ -49,11 +116,23 @@
 	<script>
 		function dark() {
     		document.body.style.backgroundColor = "#1d1d1d";
-    		document.body.style.color = "white"
+    		document.body.style.color = "white";
+            var links = document.getElementsByTagName("a");
+            for (var i=0;i<links.length;i++) {
+                if (links[i].href) {
+                    links[i].style.color = "white";  
+                }
+            }
 		}
 		function light() {
     		document.body.style.backgroundColor = "#efeef1";
-    		document.body.style.color = "black"
+    		document.body.style.color = "black";
+            var links = document.getElementsByTagName("a");
+            for (var i=0;i<links.length;i++) {
+                if (links[i].href) {
+                    links[i].style.color = "black";  
+                }
+            }
 		}
 	</script>
 </body>
