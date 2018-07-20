@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <script>document.body.classList.add('fade');</script>
     <div class="navbar">
         <div class="container">
             <img class="nav-logo" width="40px" src="imgs/creeper.svg" alt="Logo">
@@ -169,6 +170,11 @@
             <p align="center">© Jacky, All Rights Reserved</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            document.body.classList.remove('fade');
+        });
+    </script>
 </body>
 
 </html>

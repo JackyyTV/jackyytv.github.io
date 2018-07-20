@@ -6,6 +6,13 @@ body {
     background: #101010;
     color: white;
     font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade {
+    opacity: 0;
+    transition: none;
 }
 
 h1 {
