@@ -26,20 +26,12 @@ h2 {
     font-size: 32px;
     line-height: 100%;
     margin: 10px 0;
-    padding: 0;
+    padding-top: 80px;
 }
 
 a {
     text-decoration: none;
     color: white;
-}
-
-section {
-    display: none;
-}
-
-section:first-of-type {
-    display: block;
 }
 
 /*CLASSES*/
@@ -50,13 +42,16 @@ section:first-of-type {
     top: 0;
     width: 100%;
     height: 70px;
-    background: #06b121;
-    background: rgba(6, 177, 33, 0.7);
+    background: rgba(139, 204, 41, 0.8);
+}
+
+.welcome {
+    padding-top: 25px;
 }
 
 .main {
     width: 100%;
-    height: 1500px;
+    height: 2000px;
 }
 
 .container {
@@ -80,14 +75,17 @@ section:first-of-type {
     transition: 0.6s;
 }
 
+.nav-list {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .nav-menu {
-    position: static;
     padding: 0;
     margin: 0;
-    line-height: 70px;
-    float: right;
     font-size: 24px;
     height: 70px;
+    line-height: 400px;
 }
 
 .nav-item {
@@ -103,16 +101,6 @@ section:first-of-type {
 
 .nav-link-name {
     font-size: 0;
-}
-
-.nav-mobile {
-    display: none;
-    height: inherit;
-    float: right;
-    padding: 0;
-    margin: 0;
-    line-height: 70px;
-    font-size: 36px;
 }
 
 [class^='socicon'] {
@@ -214,21 +202,22 @@ section:first-of-type {
 
 .page-nav {
     text-align: center;
-    margin-top: 20px;
 }
 
 .page-nav-list {
     padding: 0;
     margin: 0;
     font-size: 16px;
-    display: inline-block;
+    line-height: 70px;
+    height: 70px;
+    float: right;
+    position: static;
 }
 
 .page-nav-item {
-    display: block;
-    float: left;
+    display: inline;
+    position: static;
     list-style: none;
-    background: green;
     transition: 0.3s;
 }
 
@@ -236,7 +225,6 @@ section:first-of-type {
     color: white;
     padding: 15px;
     margin: 0;
-    display: block;
 }
 
 .page-nav-item:first-child {
@@ -248,28 +236,13 @@ section:first-of-type {
 }
 
 .page-nav-item:hover {
-    background: darkgreen;
+    background: rgb(139, 204, 41);
     transition: 0.3s;
     cursor: pointer;
 }
 
-.page-nav-active {
-    background: darkgreen;
-}
-
 .page-nav-active:hover {
     cursor: default;
-}
-
-.content-change {
-    position: relative;
-}
-
-.content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 
 /*SCROLLBAR*/
@@ -289,83 +262,4 @@ section:first-of-type {
     border-radius: 10px;
     background: rgba(175, 175, 175, .5) !important;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
-}
-
-/*MEDIA QUERIES*/
-
-@media only screen and (max-width: 1268px) {
-    .twitch-status {
-        width: 45%;
-        left: 27.5%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    .nav-menu {
-        position: absolute;
-        display: none;
-        width: 50%;
-        line-height: 40px;
-        top: 70px;
-        right: 0;
-        padding: 0 10px;
-        background: #06b121;
-        background: rgba(6, 177, 33, 0.7);
-        height: auto;
-    }
-
-    .nav-item {
-        width: 100%;
-        display: block;
-        border-bottom: black solid 1px;
-    }
-
-    .nav-link {
-        display: block;
-    }
-
-    .nav-item:last-child {
-        border-bottom: none;
-    }
-
-    .nav-mobile {
-        display: block;
-    }
-
-    .nav-link-name {
-        font-size: 18px;
-        padding-left: 10px;
-        line-height: 40px;
-    }
-
-    [class^='socicon'] {
-        line-height: 50px !important;
-    }
-
-    .twitch-status {
-        width: 90%;
-        left: 5%;
-    }
-
-    .page-nav-list {
-        width: 80%;
-    }
-
-    .page-nav-item:first-child {
-        border-radius: 5px;
-    }
-
-    .page-nav-item:last-child {
-        border-radius: 5px;
-    }
-
-    .page-nav-item {
-        float: none;
-        margin-bottom: 10px;
-        border-radius: 5px;
-    }
 }
