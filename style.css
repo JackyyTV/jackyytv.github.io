@@ -34,6 +34,12 @@ a {
     color: white;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
 /*CLASSES*/
 
 .navbar {
@@ -83,9 +89,8 @@ a {
 .nav-menu {
     padding: 0;
     margin: 0;
+    margin-top: -15px;
     font-size: 24px;
-    height: 70px;
-    line-height: 400px;
 }
 
 .nav-item {
@@ -141,63 +146,6 @@ a {
 
 .socicon-mail:hover {
     color: #a0a0a0;
-}
-
-.twitch-status {
-    position: relative;
-    width: 25%;
-    left: 37.5%;
-    top: 135px;
-    text-shadow: 2px 2px 4px #000;
-    display: block;
-}
-
-.live-profile {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    transition: 0.3s;
-    border: 1px solid purple;
-    border-radius: 50px;
-    -webkit-box-shadow: 0 0 10px #000;
-            box-shadow: 0 0 10px #000;
-}
-
-.twitch-status:hover > .live-profile {
-    transition: 0.3s;
-    -webkit-box-shadow: 0 0 18px #000;
-            box-shadow: 0 0 18px #000;
-}
-
-.live-icon {
-    font-size: 18px;
-    line-height: 28px;
-    color: red;
-    height: 35px;
-    vertical-align: middle;
-}
-
-.live-status {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 28px;
-    line-height: 28px;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.live-title {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 18px;
-    margin: 5px;
-    text-align: center;
-}
-
-.live-game {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    margin: 0;
-    text-align: center;
 }
 
 .page-nav {
