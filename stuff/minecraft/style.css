@@ -66,6 +66,7 @@ iframe {
     height: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 50px;
 }
 
 .nav-logo {
