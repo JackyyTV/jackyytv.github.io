@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     opacity: 1;
     transition: 1s opacity;
-    background-image: url("imgs/main.png");
+    background-image: url("resources/main.png");
 }
 
 body.fade {
